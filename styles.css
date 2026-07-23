@@ -3,6 +3,7 @@
   --ink-soft: #4a4a4a;
   --panel-dark: #3d3d3d;
   --section-tint: #eaf1f8;
+  --section-tint-alt: #eef5ec;
   --accent-green-dark: #2e7d32;
   --accent-green-mid: #66bb6a;
   --accent-green-light: #a5d6a7;
@@ -216,9 +217,9 @@ nav a:hover { border-bottom-color: var(--accent-green-mid); }
 /* ---------- REFERENCES ---------- */
 
 .references {
-  background: var(--section-tint);
+  background: var(--section-tint-alt);
   padding: 70px 0 80px;
-  border-top: 1px solid #d9e4ee;
+  border-top: 1px solid #dbe9d6;
 }
 
 .references-intro {
