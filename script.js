@@ -20,7 +20,7 @@ document.querySelectorAll('.ref-toggle').forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.ref-card');
     const isExpanded = card.classList.toggle('expanded');
-    btn.textContent = isExpanded ? 'Lees minder ‹' : 'Lees meer ›';
+    btn.textContent = isExpanded ? 'Read less ‹' : 'Read more ›';
   });
 });
 
