@@ -53,21 +53,23 @@ header {
 }
 
 .logo-img {
-  height: 52px;
+  height: 60px;
   width: auto;
 }
 
 .brand-text h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  line-height: 1.1;
 }
 
 .brand-text p {
-  margin: 2px 0 0;
-  font-size: 15px;
+  margin: -2px 0 0;
+  font-size: 16px;
   color: var(--ink-soft);
+  line-height: 1.1;
 }
 
 nav {
@@ -233,6 +235,8 @@ nav a:hover { border-bottom-color: var(--accent-green-mid); }
 .about-photo img {
   border-radius: var(--radius);
   filter: grayscale(100%);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 @media (min-width: 860px) {
