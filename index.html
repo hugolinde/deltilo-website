@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deltilo | Venture Management</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="header-row">
+      <div class="brand">
+        <svg width="52" height="52" viewBox="0 0 100 100" aria-hidden="true">
+          <rect x="46" y="55" width="8" height="30" fill="var(--accent-brown)"/>
+          <circle cx="50" cy="30" r="9" fill="var(--accent-green-mid)"/>
+          <circle cx="32" cy="38" r="7" fill="var(--accent-green-dark)"/>
+          <circle cx="68" cy="38" r="7" fill="var(--accent-green-dark)"/>
+          <circle cx="24" cy="52" r="6" fill="var(--accent-green-light)"/>
+          <circle cx="76" cy="52" r="6" fill="var(--accent-green-light)"/>
+          <circle cx="40" cy="22" r="6" fill="var(--accent-green-light)"/>
+          <circle cx="60" cy="22" r="6" fill="var(--accent-green-dark)"/>
+          <circle cx="50" cy="48" r="7" fill="var(--accent-green-mid)"/>
+        </svg>
+        <div class="brand-text">
+          <h1>deltilo</h1>
+          <p>Venture Management</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <nav id="mobileNav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <p>Deltilo is active on the cutting edge between business and technology. We are convinced that excellence in business planning, management and funding is key to a commercially successful implementation of technology. We are happy to help you with any one of these three components.</p>
+    <div class="hero-img">
+      <img src="images/hero-lighthouse.jpg" alt="Lighthouse in stormy sea">
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>Our services</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/service-planning.jpg" alt="Business planning meeting">
+        <h3>Planning</h3>
+        <p>Deltilo's services portfolio includes business and technology planning, market research, valuation, financial analysis, due diligence, product- and program management.</p>
+      </div>
+      <div class="card">
+        <img src="images/service-management.jpg" alt="Hand adjusting a mixing console">
+        <h3>Management</h3>
+        <p>Deltilo provides, recruits or empowers management to achieve a successful synergy between business and technology, whether interim or long term.</p>
+      </div>
+      <div class="card">
+        <img src="images/service-capital.jpg" alt="View up through a steel bridge structure">
+        <h3>Capital</h3>
+        <p>Deltilo can structure the funds required for further business or technology development, for example through governmental subsidies, loans, venture capital or crowdfunding.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <h2 style="text-align:left;">About</h2>
+      <p>Deltilo is founded and managed by Hugo van der Linde, a seasoned entrepreneur and executive in the technology sector. Already in 1998 Hugo launched RMG Venture Management from where he founded, financed and managed several technology companies. For example, Hugo co-founded, financed and directed the third largest business broadband internet company in the Netherlands.</p>
+      <p>Thereafter he was CEO of the platform on which over 95% of all travel agencies in the Netherlands make all their bookings. After migrating it to a cloud-based service and making record profits during three consecutive years, the company was sold to TUI, the largest travel company in the world.</p>
+      <p>As of 2012 Hugo became CEO of AND, a public company listed at the Euronext Stock exchange. Transforming the company to a state-of-the-art technology provider, AND was engaged in providing location technologies to Fortune 500 tech companies worldwide. During his seven years leadership AND's share price increased by more than 150% and AND won the Euronext Best Performer award in both 2013 and 2015.</p>
+      <p>Hugo holds a Master degree in Science (MSc) from the Technical University in Delft and a Master degree in Business Administration (MBA) from the RSM Erasmus University in Rotterdam.</p>
+      <p>Deltilo is flexibly supported by an extensive network of legal, financial, managerial and technology experts, but is equally happy to team up with existing professionals.</p>
+    </div>
+    <div class="about-photo">
+      <img src="images/about-hugo.jpg" alt="Portrait of Hugo van der Linde">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <h3>Our strengths</h3>
+      <ul>
+        <li>Business Planning</li>
+        <li>Management</li>
+        <li>Capital</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="1" width="22" height="18" rx="2"/><path d="M2 3l10 8 10-8"/></svg>
+        <a href="mailto:info@deltilo.com">info@deltilo.com</a>
+      </div>
+    </div>
+    <div class="bottom-bar" style="grid-column: 1 / -1;">
+      &copy; <span id="year"></span> Deltilo Venture Management
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
