@@ -213,6 +213,98 @@ nav a:hover { border-bottom-color: var(--accent-green-mid); }
   margin: 0;
 }
 
+/* ---------- REFERENCES ---------- */
+
+.references {
+  padding: 70px 0 80px;
+}
+
+.references-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: -20px auto 40px;
+  color: var(--ink-soft);
+  font-size: 17px;
+}
+
+.ref-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 760px) {
+  .ref-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.ref-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  padding: 24px 26px 22px;
+}
+
+.ref-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.ref-card h3 {
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.ref-role {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ref-meta {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #7c7c7c;
+}
+
+.ref-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #c0554b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ref-toggle:hover { text-decoration: underline; }
+
+.ref-details {
+  display: none;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #eee;
+}
+
+.ref-details p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0 0 10px;
+}
+
+.ref-details p:last-child { margin-bottom: 0; }
+
+.ref-card.expanded .ref-details { display: block; }
+
 /* ---------- ABOUT ---------- */
 
 .about {
