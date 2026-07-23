@@ -52,6 +52,11 @@ header {
   gap: 14px;
 }
 
+.logo-img {
+  height: 52px;
+  width: auto;
+}
+
 .brand-text h1 {
   margin: 0;
   font-size: 30px;
