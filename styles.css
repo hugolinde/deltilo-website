@@ -54,7 +54,7 @@ header {
 }
 
 .logo-img {
-  height: 60px;
+  height: 66px;
   width: auto;
 }
 
@@ -63,14 +63,14 @@ header {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .brand-text p {
-  margin: -2px 0 0;
+  margin: 1px 0 0;
   font-size: 16px;
   color: var(--ink-soft);
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 nav {
@@ -165,10 +165,17 @@ nav a:hover { border-bottom-color: var(--accent-green-mid); }
   position: relative;
 }
 
-.services h2, .about h2 {
+.services h2, .references h2 {
   text-align: center;
   font-size: 30px;
   margin: 0 0 40px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.about-heading {
+  font-size: 30px;
+  margin: 0 0 8px;
   font-weight: 800;
   letter-spacing: 0.3px;
 }
@@ -272,6 +279,9 @@ nav a:hover { border-bottom-color: var(--accent-green-mid); }
   margin-bottom: 16px;
 }
 
+.ref-logo.size-md { height: 50px; }
+.ref-logo.size-lg { height: 60px; }
+
 .ref-card h3 {
   margin: 0 0 6px;
   font-size: 19px;
@@ -328,11 +338,28 @@ nav a:hover { border-bottom-color: var(--accent-green-mid); }
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  grid-template-areas:
+    "heading"
+    "photo"
+    "body";
+  gap: 24px;
   align-items: start;
 }
 
-.about-grid p {
+.about-heading {
+  grid-area: heading;
+  text-align: left;
+}
+
+.about-photo {
+  grid-area: photo;
+}
+
+.about-body {
+  grid-area: body;
+}
+
+.about-body p {
   color: var(--ink-soft);
   font-size: 17px;
   margin: 0 0 20px;
@@ -348,9 +375,11 @@ nav a:hover { border-bottom-color: var(--accent-green-mid); }
 @media (min-width: 860px) {
   .about-grid {
     grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+      "heading heading"
+      "body photo";
+    gap: 32px;
   }
-  .about-photo { order: 2; }
-  .about-text { order: 1; }
 }
 
 /* ---------- FOOTER ---------- */
