@@ -45,3 +45,30 @@ window.addEventListener('scroll', () => {
     link.classList.toggle('active', link.getAttribute('href') === '#' + current);
   });
 });
+
+// Language dropdown
+const langSwitch = document.getElementById('langSwitch');
+const langBtn = document.getElementById('langBtn');
+
+if (langSwitch && langBtn) {
+  const setLangOpen = open => {
+    langSwitch.classList.toggle('open', open);
+    langBtn.setAttribute('aria-expanded', open);
+  };
+
+  langBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    setLangOpen(!langSwitch.classList.contains('open'));
+  });
+
+  document.addEventListener('click', e => {
+    if (!langSwitch.contains(e.target)) setLangOpen(false);
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && langSwitch.classList.contains('open')) {
+      setLangOpen(false);
+      langBtn.focus();
+    }
+  });
+}
