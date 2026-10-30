@@ -15,12 +15,19 @@ mobileNav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Expand/collapse reference cards
+// Expand/collapse reference cards (labels follow the page language)
+const toggleLabels = {
+  en: ['Read more ›', 'Read less ‹'],
+  nl: ['Lees meer ›', 'Lees minder ‹'],
+  es: ['Leer más ›', 'Leer menos ‹']
+};
+const [readMore, readLess] = toggleLabels[document.documentElement.lang] || toggleLabels.en;
+
 document.querySelectorAll('.ref-toggle').forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.ref-card');
     const isExpanded = card.classList.toggle('expanded');
-    btn.textContent = isExpanded ? 'Read less ‹' : 'Read more ›';
+    btn.textContent = isExpanded ? readLess : readMore;
   });
 });
 
